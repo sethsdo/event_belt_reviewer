@@ -1,0 +1,16 @@
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/config/WebSecurityConfig.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/models/Event.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/models/Message.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/controllers/DashboardController.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/repositories/UserRepository.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/models/User.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/validators/UserValidator.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/services/EventService.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/controllers/EventsController.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/EventSchedulerApplication.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/services/UserService.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/controllers/UserController.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/repositories/MessageRepository.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/services/MessageService.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/services/UserDetailsServiceImplementation.java
+/Users/setholmstead/Desktop/DojoAssignments/JAVA/SpringSecurity/EventScheduler/src/main/java/com/project/EventScheduler/repositories/EventRepository.java
