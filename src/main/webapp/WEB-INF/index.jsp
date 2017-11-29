@@ -13,77 +13,84 @@
 	<title>Index</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<style>
+		.form-control {
+			border-radius: 0px;
+			width: 100%;
+			height: 50px;
+		}
+	
+		h1 {
+			text-align: center;
+		}
+	
+		.btn {
+			background-color: rgb(64, 139, 201);
+			font-size: large;
+		}
+	
+		.errors {
+			color: red;
+		}
+	</style>
 </head>
 
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-6">
-				<h1>Login</h1>
-				<p>
-					${errorMessage} ${loginMessage} ${logoutMessage} ${registered}
+				<h1 style="margin-top:250px;">Welcome</h1>
+				<hr>
+			</div>
+	
+			<div class="col-xs-5">
+				<h1 class="">Login</h1>
+				<p class="errors">
+					${errorMessage} ${loginMessage} ${logoutMessage}
+				</p>
+				<p style="color:green">
+					${registered}
 				</p>
 				<form method="POST" action="/login">
 					<p>
-						<label for="username">Email</label>
-						<input type="text" id="username" name="username" />
+						<input class="form-control" placeholder="Email" type="text" id="username" name="username" />
 					</p>
 					<p>
-						<label for="password">Password</label>
-						<input type="password" id="password" name="password" />
+						<input class="form-control" placeholder="Password" type="password" id="password" name="password" />
 					</p>
 					<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-					<input type="submit" value="Login!" />
+					<input type="submit" class="btn btn-default form-control" value="Login!" />
 				</form>
-			</div>
-			<div class="col-xs-6">
-				<h1>Register!</h1>
-
-				<p>
-					<form:errors path="user.*" />
+				<h1 class="">Register!</h1>
+				<p class="errors">
+					<form:errors path="user.*" /> ${error} ${error5}
 				</p>
-
 				<form:form method="POST" action="/registration" modelAttribute="user">
 					<p>
-						<form:label path="firstName">First Name:</form:label>
-						<form:input path="firstName" />
+						<form:input path="username" class="form-control" placeholder="Email" />
 					</p>
 					<p>
-						<form:label path="lastName">Last Name:</form:label>
-						<form:input path="lastName" />
+						<form:input path="firstName" class="form-control" placeholder="First Name" />
 					</p>
 					<p>
-						<form:label path="username">Email:</form:label>
-						<form:input path="username" />
+						<form:input path="lastName" class="form-control" placeholder="Last Name" />
 					</p>
 					<p>
-						<form:label path="location">Location:</form:label>
-						<form:input path="location" />
+						<form:password path="password" class="form-control" placeholder="Password" />
 					</p>
 					<p>
-						<form:label path="state">State:</form:label>
-
-						<form:select path="state">
-							<c:forEach items="${states}" var="state">
-
-								<form:option value="${state}">${state}</form:option>
-							</c:forEach>
-						</form:select>
+						<form:password path="passwordConfirmation" class="form-control" placeholder="Password Confirmation" />
 					</p>
-					<p>
-						<form:label path="password">Password:</form:label>
-						<form:password path="password" />
-					</p>
-					<p>
-						<form:label path="passwordConfirmation">Password Confirmation:</form:label>
-						<form:password path="passwordConfirmation" />
-					</p>
-					<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-					<input type="submit" value="Register!" />
+					<input type="submit" value="Register!" class="btn btn-default form-control" />
 				</form:form>
 			</div>
+			<div class="col-xs-1"></div>
 		</div>
-	</div>
 </body>
 
 </html>
